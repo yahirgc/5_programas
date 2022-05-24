@@ -8,107 +8,7 @@
         <title>5 PROGRAMAS</title>
 
 
-        <script>
-            //hola
-        //variables universales
-        var saldo = 10000;
-
-        var pesos = (" Pesos");
-        nombre = prompt ("Tu Nombre...");
-
-        function funca(){
-
-                pasrseFloat(mat1, mat2, mat3, mat4, mat5, res, op, suma);
-
-                 mat1 = document.getElementById("cal1").value;
-                 mat2 = document.getElementById("cal2").value;
-                 mat3 = document.getElementById("cal3").value;
-                 mat4 = document.getElementById("cal4").value;
-                 mat5 = document.getElementById("cal5").value;
-
-                 suma = parseFloat(mat1) + parseFloat(mat2) + parseFloat(mat3) + parseFloat(mat4) + parseFloat(mat5);
-                 op = suma / 5;
-                 alert ("sacaste " + op);
-                 }
-
-
-            function funar(){
-
-                var dma, dme, arres, a;
-
-
-                 dma = document.getElementById("dima").value;
-                 dme = document.getElementById("dime").value;  
-                 a = parseFloat(dma) * parseFloat(dme);
-                 arres = a /2;
-                    alert ("El Resultado Es " + arres);}
-
-
-            function funba(){
-
-                var caja;
-
-                caja = ("<h3>"+"Hola " + nombre + " Que deseas realizar?"+ "</h3>" + "<br>" + "<br>"+ "<button onclick='consultar()' >Consultar saldo</button>"+ "<br>" + "<br>"+ "<button onclick='retirar()'>Retirar Dinero</button>" + "<br>" + "<br>"+ "<button onclick='depositar()'>Depositar</button>");                
-                document.getElementById("lol").innerHTML =caja;
-            }
-
-            function consultar(){
-
-            alert ("Tienes " + saldo + pesos);
-                
-            }
-
-
-            function retirar(){
-            
-                var monei;
-    
-            monei = prompt ("Cuanto desea retirar?, Solo se admiten numeros");
-
-                     saldo = saldo - monei;
-                
-            }
-
-            function depositar(){
-
-                    var plus;
-
-                    plus = prompt ("Cuanto desea depositar?");
-
-                    saldo = saldo + parseFloat(plus);
-
-            }
-
-            function funimc(){
-                
-                let imc, dos, alt, pes;
-
-                    alt = document.getElementById("altura").value;
-                    pes = document.getElementById("peso").value;
-
-                    dos = parseFloat(alt) * parseFloat(alt);
-                    imc = parseFloat(pes) / parseFloat(dos);
-
-                alert (imc);
-                    
-                        
-            } 
-
-            function funpor(){
-
-                let p, v,r,s;
-                p = document.getElementById("porcentaje").value;
-                v = document.getElementById("valor").value;
-                
-                r = parseInt(p) * parseInt(v) / 100;
-                s = ("El " + p + "% " + " de " + v + " es " + r);
-                document.getElementById("p").innerHTML =s;
-                 
-       
-                
-            }  
-
-        </script>
+        
 
         
         <style>
@@ -255,5 +155,106 @@
 <strong>GUEVARA CARDONA YAHIR<strong>
     </body>
 
+<script>
+            //hola
+        //variables universales
+        var saldo = 10000;
 
+        var pesos = (" Pesos");
+        nombre = prompt ("Tu Nombre...");
+
+        function funca(){
+
+                pasrseFloat(mat1, mat2, mat3, mat4, mat5, res, op, suma);
+
+                 mat1 = document.getElementById("cal1").value;
+                 mat2 = document.getElementById("cal2").value;
+                 mat3 = document.getElementById("cal3").value;
+                 mat4 = document.getElementById("cal4").value;
+                 mat5 = document.getElementById("cal5").value;
+
+                 suma = parseFloat(mat1) + parseFloat(mat2) + parseFloat(mat3) + parseFloat(mat4) + parseFloat(mat5);
+                 op = suma / 5;
+                 alert ("sacaste " + op);
+                 }
+
+
+            function funar(){
+
+                var dma, dme, arres, a;
+
+
+                 dma = document.getElementById("dima").value;
+                 dme = document.getElementById("dime").value;  
+                 a = parseFloat(dma) * parseFloat(dme);
+                 arres = a /2;
+                    alert ("El Resultado Es " + arres);}
+
+
+            function funba(){
+
+                var caja;
+
+                caja = ("<h3>"+"Hola " + nombre + " Que deseas realizar?"+ "</h3>" + "<br>" + "<br>"+ "<button onclick='consultar()' >Consultar saldo</button>"+ "<br>" + "<br>"+ "<button onclick='retirar()'>Retirar Dinero</button>" + "<br>" + "<br>"+ "<button onclick='depositar()'>Depositar</button>");                
+                document.getElementById("lol").innerHTML =caja;
+            }
+
+            function consultar(){
+
+            alert ("Tienes " + saldo + pesos);
+                
+            }
+
+
+            function retirar(){
+            
+                var monei;
+    
+            monei = prompt ("Cuanto desea retirar?, Solo se admiten numeros");
+
+                     saldo = saldo - monei;
+                
+            }
+
+            function depositar(){
+
+                    var plus;
+
+                    plus = prompt ("Cuanto desea depositar?");
+
+                    saldo = saldo + parseFloat(plus);
+
+            }
+
+            function funimc(){
+                
+                let imc, dos, alt, pes;
+
+                    alt = document.getElementById("altura").value;
+                    pes = document.getElementById("peso").value;
+
+                    dos = parseFloat(alt) * parseFloat(alt);
+                    imc = parseFloat(pes) / parseFloat(dos);
+
+                alert (imc);
+                    
+                        
+            } 
+
+            function funpor(){
+
+                let p, v,r,s;
+                p = document.getElementById("porcentaje").value;
+                v = document.getElementById("valor").value;
+                
+                r = parseInt(p) * parseInt(v) / 100;
+                s = ("El " + p + "% " + " de " + v + " es " + r);
+                document.getElementById("p").innerHTML =s;
+                 
+       
+                
+            }  
+
+        </script>
+	
 </html>
